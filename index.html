@@ -10,7 +10,7 @@
 <body>
   <section class="conteúdo">
     <div class="conteúdo-título">
-        <img src="" alt="">
+        <img src="unlock.svg.png" alt="">
          <h2 class="título-principal">Gerador de senhas</h2>
          <h3 class="título-secundário">Gere instantaneamente uma senha aleatória e segura</h3>
     </div>
@@ -27,19 +27,41 @@
                 <button class="parametro-senha__botao">-</button>
                 <p class="parametro-senha__texto">12</p>
                 <button class="parametro-senha__botao">+</button>
+
             </div>
          </div>
          <div class="parametro-senha">
             <h4 class="parametro-senha__titulo">Características da Senha</h4>
             <div class="parametro-senha-checkbox">
                 <input name="maíusculo" type="checkbox" class="checkbox" checked>
-                <label for="maísculo">Letras Maíusculas</label>
+                <label for="maíusculo">Letras Maíusculas</label>
             </div>
+            <div class="parametro-senha-checkbox">
+             <input name="minusculo" type="checkbox" class="checkbox">
+             <label for="minusculo">Letras Minusculas</label>
+            </div>
+            <div class="parametro-senha-checkbox">
+                  <input name="Numero" type="checkbox" class="checkbox" checked>
+                  <label for="Numero">Numero</label>
+              </div>
+              <div class="parametro-senha-checkbox">
+                    <input name="simbolo" type="checkbox" class="checkbox" checked>
+                    <label for="simbolo">Símbolos</label>
          </div>
       </div>
+      <div class="parametro-senha">
+        <h4 class="parametro-senha__titulo">Força da senha</h4>
+        <div class="barra"></div>
+        <div class="forca fraca"></div>
+        <div class="parametro-senha-textos"></div>
+        <p>Fraca</p>
+        <p>Média</p>
+        <p>Forte</p>
+      </div>
+      <p class="entropia"></p>
     </div>
   </section>  
-
+<script src="main.js"></script>
 
 </body>
 </html>
